@@ -1,0 +1,82 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa; /* Optional background color */
+}
+
+.square-box {
+    width: 500px;
+    height: auto; /* Adjusted to auto to fit content */
+    border: 2px solid #000; /* Black border */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional shadow */
+    background-color: #fff; /* Optional background color */
+    display: flex;
+    flex-direction: column;
+}
+
+.square-box h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.square-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.square-box label {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.square-box input[type="text"], 
+.square-box textarea {
+    width: calc(100% - 120px); /* Adjust width to fit the box */
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.square-box textarea {
+    height: 150px; /* Adjust height as needed */
+}
+.square-box input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff; /* สีฟ้าสำหรับปุ่ม Add post */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    flex: 1;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-cancel {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #dc3545; /* สีแดงสำหรับปุ่ม Cancel */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    flex: 1;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-cancel:hover {
+    background-color: #c82333; /* สีแดงเข้มเมื่อชี้ */
+}
+
+.square-box .btn-container {
+    display: flex;
+    justify-content: space-between; /* จัดปุ่มให้ชิดซ้ายและขวา */
+    margin-top: 20px; /* ระยะห่างระหว่างฟอร์มและปุ่ม */
+}
